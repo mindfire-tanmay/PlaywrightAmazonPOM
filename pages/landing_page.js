@@ -4,7 +4,7 @@ exports.LandingPage = class LandingPage {
     this.page = page;
     this.searchInput = page.getByLabel(/search amazon/i);
     this.searchButton = page.getByRole('button', { name: 'Go', exact: true} );
-    this.firstProduct = page.locator('div[data-component-type*="search-result"] h2').first();
+    this.firstProduct = page.locator('div[data-component-type*="search-result"] img').nth(1);
   }
 
   async searchAndOpenProduct(searchText) {
