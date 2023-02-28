@@ -43,7 +43,6 @@ module.exports = defineConfig({
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
     launchOptions: {
-      headless: false,
       slowMo: 750
     }
   },
